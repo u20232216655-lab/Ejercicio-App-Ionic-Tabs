@@ -1,17 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content class="ion-padding">
+ <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>¡Bienvenido! 👋</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>{{ nombreCompleto }}</h2>
+      <p>
+        Estudiante de
+        <strong>{{ carrera }}</strong>
+      </p>
+      <p>
+        Bienvenido a mi aplicación desarrollada con
+        Ionic, Angular y TypeScript.
+      </p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
